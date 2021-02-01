@@ -5,4 +5,4 @@ one.o: one.c
 	gcc -c one.c -o one.o
 
 clean:
-	rm *.o one
+	rm *.o one.exe

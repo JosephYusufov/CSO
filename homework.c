@@ -2,7 +2,13 @@
 #include <stdlib.h>
 const int MAX_BUFFER = 255;
 
-void printFile(char* fileName) {
+// Function for Exercise 1
+void printEOF(){
+    printf("Value of EOF: %d\n", EOF);
+}
+
+// Function for Exercise 2
+void printFileCleanSpaces(char* fileName) {
     FILE *fd = fopen(fileName, "r");
     char buffer[1];
     char prev;
@@ -24,14 +30,13 @@ void printFile(char* fileName) {
     fclose(fd);
 }
 
+
 void main(int args, char* argv[]){
+    // Executing Exercise 1
+    printEOF();
+
+    // Executing Exercise 2
     if(args > 1){
-        printFile(argv[1]);
+        printFileCleanSpaces(argv[1]);
     }
-    // printf("Hello World");
-    // printf("args: %d\n", args);
-    // char prev[1];
-    // *prev = 'c';
-    // prev = char[1];
-    // puts(prev);
 }

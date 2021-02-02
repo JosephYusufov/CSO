@@ -1,8 +1,8 @@
-one.exe: one.o
-	gcc one.o -o one.exe
+homework.exe: homework.o
+	gcc homework.o -o homework.exe
 
-one.o: one.c
-	gcc -c one.c -o one.o
+homework.o: homework.c
+	gcc -c homework.c -o homework.o
 
 clean:
-	rm *.o one.exe
+	rm *.o homework.exe

@@ -30,6 +30,29 @@ void printFileCleanSpaces(char* fileName) {
     fclose(fd);
 }
 
+// Function for Exercise 3
+void printWords(char* string) {
+    char buffer;
+    buffer = string[0];
+    char prev;
+    int i;
+    i = 0;
+    while(buffer != '\0'){
+        if(i > 0){
+            if((buffer != ' ') && (prev == ' ')){
+                printf("\n%c", buffer);
+            } else {
+                printf("%c", buffer);                
+            }
+        } else {
+            printf("%c", buffer);                
+        }
+        prev = buffer;
+        i++;
+        buffer = string[i];
+    }
+    printf("\n");
+}
 
 void main(int args, char* argv[]){
     // Executing Exercise 1
@@ -38,5 +61,10 @@ void main(int args, char* argv[]){
     // Executing Exercise 2
     if(args > 1){
         printFileCleanSpaces(argv[1]);
+    }
+    
+    // Executing Exercise 3
+    if(args > 2){
+        printWords(argv[2]);
     }
 }

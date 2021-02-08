@@ -10,4 +10,4 @@ Rec. Leader: Arhant Kumar
 ## Instructions
 * Extract the archive
 * run `make`
-* run `./homework.exe sampleText.exe`
+* run `./myprogram.exe`

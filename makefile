@@ -5,6 +5,6 @@ main.o: main.c
 util.o: util.c
 	gcc -std=c99 -c util.c -o util.o
 prime.o: prime.c
-	gcc prime.c -o prime.o
+	gcc -std=c99 prime.c -o prime.o
 clean:
 	rm *.o homework.exe

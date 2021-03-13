@@ -9,6 +9,6 @@ Rec. Leader: Arhant Kumar
 
 ## Instructions
 A branch has been created for each homework, each lab, and each recitaiton assignment with the following naming key.
-* `h-xx` for each homework.
-* `l-xx` for each lab.
-* `r-xx` for each recitation assignment.
+* `hw-xx` for each homework.
+* `lab-xx` for each lab.
+* `rec-xx` for each recitation assignment.

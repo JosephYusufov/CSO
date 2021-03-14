@@ -1,4 +1,4 @@
-program: one.o two.o three.o four.o
+program: one.o two.o three.o four.o five.o
 
 one.o: one.c
 	gcc one.c -o one.o
@@ -11,3 +11,6 @@ three.o: three.c
 
 four.o: four.c
 	gcc four.c -o four.o		
+
+five.o: five.c
+	gcc five.c -o five.o			

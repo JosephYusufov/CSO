@@ -11,7 +11,7 @@ int main(int argc, char *argv[]){
     char *str = argv[1];
 
     if(strcmp(str, "lowercase") && strcmp(str, "uppercase") && strcmp(str, "both")){
-        printf("Error: provide a valid argument (eppercase, lowercase, or both).\n");
+        printf("Error: provide a valid argument (uppercase, lowercase, or both).\n");
         return 1;
     }
 
